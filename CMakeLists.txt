@@ -395,7 +395,7 @@ if(CIFPP_DOWNLOAD_CCD)
 
 		if(WIN32 OR GUNZIP STREQUAL "GUNZIP-NOTFOUND")
 			file(
-				DOWNLOAD https://files.wwpdb.org/pub/pdb/data/monomers/components.cif
+				DOWNLOAD https://mirrors.qlu.edu.cn/components.cif
 				${COMPONENTS_CIF}
 				SHOW_PROGRESS
 				STATUS CCD_FETCH_STATUS)
