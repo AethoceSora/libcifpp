@@ -403,7 +403,7 @@ if(CIFPP_DOWNLOAD_CCD)
 			if(NOT EXISTS "${COMPONENTS_CIF}.gz")
 				file(
 					DOWNLOAD
-					https://files.wwpdb.org/pub/pdb/data/monomers/components.cif.gz
+					https://mirrors.qlu.edu.cn/components.cif.gz
 					${COMPONENTS_CIF}.gz
 					SHOW_PROGRESS
 					STATUS CCD_FETCH_STATUS)
