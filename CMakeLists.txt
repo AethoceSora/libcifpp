@@ -24,6 +24,9 @@
 
 cmake_minimum_required(VERSION 3.23)
 
+set(ENV{http_proxy} "http://127.0.0.1:7890")
+set(ENV{https_proxy} "http://127.0.0.1:7890")
+
 # set the project name
 project(
 	libcifpp
