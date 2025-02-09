@@ -380,7 +380,7 @@ endif(CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
 
 if(CIFPP_DOWNLOAD_CCD)
 	# download the components.cif file from CCD
-	set(COMPONENTS_CIF ${CMAKE_CURRENT_SOURCE_DIR}/rsrc/components.cif)
+	set(COMPONENTS_CIF /root/components.cif)
 
 	if(EXISTS ${COMPONENTS_CIF})
 		file(SIZE ${COMPONENTS_CIF} CCD_FILE_SIZE)
