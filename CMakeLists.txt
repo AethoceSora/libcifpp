@@ -394,9 +394,9 @@ if(CIFPP_DOWNLOAD_CCD)
 		find_program(GUNZIP gunzip)
 
 		if(WIN32 OR GUNZIP STREQUAL "GUNZIP-NOTFOUND")
-  				execute_process(COMMAND bash -c "unset https_proxy")
+  				execute_process(COMMAND bash -c "proxy_on")
 			file(
-				DOWNLOAD https://mirrors.qlu.edu.cn/components.cif
+				DOWNLOAD https://files.wwpdb.org/pub/pdb/data/monomers/components.cif
 				${COMPONENTS_CIF}
 				SHOW_PROGRESS
 				STATUS CCD_FETCH_STATUS)
@@ -405,7 +405,7 @@ if(CIFPP_DOWNLOAD_CCD)
    				execute_process(COMMAND bash -c "unset https_proxy")
 				file(
 					DOWNLOAD
-					https://mirrors.qlu.edu.cn/components.cif.gz
+					https://files.wwpdb.org/pub/pdb/data/monomers/components.cif.gz
 					${COMPONENTS_CIF}.gz
 					SHOW_PROGRESS
 					STATUS CCD_FETCH_STATUS)
