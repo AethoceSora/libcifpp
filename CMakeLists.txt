@@ -394,7 +394,6 @@ if(CIFPP_DOWNLOAD_CCD)
 		find_program(GUNZIP gunzip)
 
 		if(WIN32 OR GUNZIP STREQUAL "GUNZIP-NOTFOUND")
-  				execute_process(COMMAND bash -c "proxy_on")
 			file(
 				DOWNLOAD https://files.wwpdb.org/pub/pdb/data/monomers/components.cif
 				${COMPONENTS_CIF}
